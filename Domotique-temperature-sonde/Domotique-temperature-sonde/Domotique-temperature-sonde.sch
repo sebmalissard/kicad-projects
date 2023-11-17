@@ -1,0 +1,880 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+BATT #PWR?
+U 1 1 63B39171
+P 3200 1750
+F 0 "#PWR?" H 3200 1600 50  0001 C CNN
+F 1 "+BATT" V 3215 1877 50  0000 L CNN
+F 2 "" H 3200 1750 50  0001 C CNN
+F 3 "" H 3200 1750 50  0001 C CNN
+	1    3200 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 63B3D289
+P 2800 6350
+F 0 "R?" H 2870 6396 50  0000 L CNN
+F 1 "220R" H 2870 6305 50  0000 L CNN
+F 2 "" V 2730 6350 50  0001 C CNN
+F 3 "~" H 2800 6350 50  0001 C CNN
+	1    2800 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 63B3D8F6
+P 2350 6350
+F 0 "D?" V 2389 6232 50  0000 R CNN
+F 1 "LED" V 2298 6232 50  0000 R CNN
+F 2 "" H 2350 6350 50  0001 C CNN
+F 3 "~" H 2350 6350 50  0001 C CNN
+	1    2350 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 6350 2500 6350
+Text Label 8800 1850 2    50   ~ 0
+LED
+Text Label 10600 1450 0    50   ~ 0
+SCL
+Text Label 10600 1550 0    50   ~ 0
+SDA
+$Comp
+L power:GND #PWR?
+U 1 1 63B55314
+P 9100 3600
+F 0 "#PWR?" H 9100 3350 50  0001 C CNN
+F 1 "GND" V 9105 3472 50  0000 R CNN
+F 2 "" H 9100 3600 50  0001 C CNN
+F 3 "" H 9100 3600 50  0001 C CNN
+	1    9100 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 63B55750
+P 9100 3700
+F 0 "#PWR?" H 9100 3550 50  0001 C CNN
+F 1 "+3.3V" V 9115 3828 50  0000 L CNN
+F 2 "" H 9100 3700 50  0001 C CNN
+F 3 "" H 9100 3700 50  0001 C CNN
+	1    9100 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 63B568EF
+P 8800 1950
+F 0 "#PWR?" H 8800 1800 50  0001 C CNN
+F 1 "+3.3V" V 8815 2078 50  0000 L CNN
+F 2 "" H 8800 1950 50  0001 C CNN
+F 3 "" H 8800 1950 50  0001 C CNN
+	1    8800 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63B56FF4
+P 10600 1950
+F 0 "#PWR?" H 10600 1700 50  0001 C CNN
+F 1 "GND" V 10605 1822 50  0000 R CNN
+F 2 "" H 10600 1950 50  0001 C CNN
+F 3 "" H 10600 1950 50  0001 C CNN
+	1    10600 1950
+	0    -1   -1   0   
+$EndComp
+Text Label 8800 1250 2    50   ~ 0
+RESET
+Text Notes 1700 1050 0    50   ~ 0
+2 mode:\nON\nCHARGING & OFF
+Text Notes 8150 3350 0    50   ~ 0
+Ajout dans prog securité si tension 3.3V detecter
+Text Label 9100 4000 2    50   ~ 0
+RESET
+Text Label 7850 1750 2    50   ~ 0
+SWITCH
+Text Label 9100 3800 2    50   ~ 0
+TX
+Text Label 9100 3900 2    50   ~ 0
+RX
+Text Label 10600 1250 0    50   ~ 0
+TX
+Text Label 10600 1350 0    50   ~ 0
+RX
+$Comp
+L Device:Fuse F?
+U 1 1 63B6E6A7
+P 2650 1750
+F 0 "F?" V 2453 1750 50  0000 C CNN
+F 1 "Fuse" V 2544 1750 50  0000 C CNN
+F 2 "" V 2580 1750 50  0001 C CNN
+F 3 "~" H 2650 1750 50  0001 C CNN
+	1    2650 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 63B35B8C
+P 2050 1650
+F 0 "SW?" H 2050 1935 50  0000 C CNN
+F 1 "SW_SPDT" H 2050 1844 50  0000 C CNN
+F 2 "" H 2050 1650 50  0001 C CNN
+F 3 "~" H 2050 1650 50  0001 C CNN
+	1    2050 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1750 2850 1750
+$Comp
+L Diode:SM6T6V8A D?
+U 1 1 63B870A6
+P 2850 1900
+F 0 "D?" V 2804 1980 50  0000 L CNN
+F 1 "SMBJ7A" V 2895 1980 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 2850 1700 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 2800 1900 50  0001 C CNN
+	1    2850 1900
+	0    1    1    0   
+$EndComp
+Connection ~ 2850 1750
+$Comp
+L power:GND #PWR?
+U 1 1 63B8C6CF
+P 2850 2050
+F 0 "#PWR?" H 2850 1800 50  0001 C CNN
+F 1 "GND" H 2855 1877 50  0000 C CNN
+F 2 "" H 2850 2050 50  0001 C CNN
+F 3 "" H 2850 2050 50  0001 C CNN
+	1    2850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 63B9119F
+P 850 1850
+F 0 "BT?" H 968 1946 50  0000 L CNN
+F 1 "Battery_Cell" H 968 1855 50  0000 L CNN
+F 2 "" V 850 1910 50  0001 C CNN
+F 3 "~" V 850 1910 50  0001 C CNN
+	1    850  1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  1650 1850 1650
+$Comp
+L power:GND #PWR?
+U 1 1 63B9C8D8
+P 850 1950
+F 0 "#PWR?" H 850 1700 50  0001 C CNN
+F 1 "GND" H 855 1777 50  0000 C CNN
+F 2 "" H 850 1950 50  0001 C CNN
+F 3 "" H 850 1950 50  0001 C CNN
+	1    850  1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 63B4E2FB
+P 3250 1450
+F 0 "J?" H 3330 1442 50  0000 L CNN
+F 1 "Charge_batt" H 3330 1351 50  0000 L CNN
+F 2 "" H 3250 1450 50  0001 C CNN
+F 3 "~" H 3250 1450 50  0001 C CNN
+	1    3250 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63B54C12
+P 3050 1450
+F 0 "#PWR?" H 3050 1200 50  0001 C CNN
+F 1 "GND" V 3055 1322 50  0000 R CNN
+F 2 "" H 3050 1450 50  0001 C CNN
+F 3 "" H 3050 1450 50  0001 C CNN
+	1    3050 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 1750 3200 1750
+Wire Wire Line
+	2250 1750 2500 1750
+Wire Wire Line
+	2250 1550 3050 1550
+$Comp
+L Sensor_Temperature:MCP9804_MSOP U?
+U 1 1 63C682EC
+P 1200 6300
+F 0 "U?" H 1150 7150 50  0000 L CNN
+F 1 "MCP9804_MSOP / MCP90808_MSOP" H 550 7000 50  0000 L CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 1200 6300 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22203b.pdf" H 950 6750 50  0001 C CNN
+	1    1200 6300
+	1    0    0    -1  
+$EndComp
+Text Label 800  6000 2    50   ~ 0
+SDA1
+Text Label 800  6100 2    50   ~ 0
+SCL1
+NoConn ~ 800  6400
+NoConn ~ 800  6500
+NoConn ~ 800  6600
+Wire Wire Line
+	5750 3000 6250 3000
+$Comp
+L power:+BATT #PWR?
+U 1 1 63C8E2F7
+P 5750 3000
+F 0 "#PWR?" H 5750 2850 50  0001 C CNN
+F 1 "+BATT" H 5765 3173 50  0000 C CNN
+F 2 "" H 5750 3000 50  0001 C CNN
+F 3 "" H 5750 3000 50  0001 C CNN
+	1    5750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 63C8F079
+P 6250 3000
+F 0 "#PWR?" H 6250 2850 50  0001 C CNN
+F 1 "+3.3V" H 6265 3173 50  0000 C CNN
+F 2 "" H 6250 3000 50  0001 C CNN
+F 3 "" H 6250 3000 50  0001 C CNN
+	1    6250 3000
+	1    0    0    -1  
+$EndComp
+Text Notes 5750 2650 0    50   ~ 0
+1 cell LiFePo4
+Text Label 4450 6700 0    50   ~ 0
+MCP9080X_ALERT
+$Comp
+L power:+3.3V #PWR?
+U 1 1 63C75DCD
+P 8800 1450
+F 0 "#PWR?" H 8800 1300 50  0001 C CNN
+F 1 "+3.3V" V 8815 1578 50  0000 L CNN
+F 2 "" H 8800 1450 50  0001 C CNN
+F 3 "" H 8800 1450 50  0001 C CNN
+	1    8800 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74HC00 U?
+U 1 1 63CB5C3A
+P 7350 6100
+F 0 "U?" H 7350 6425 50  0000 C CNN
+F 1 "74HC00" H 7350 6334 50  0000 C CNN
+F 2 "" H 7350 6100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 7350 6100 50  0001 C CNN
+	1    7350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U?
+U 3 1 63CBB5B1
+P 7350 4900
+F 0 "U?" H 7350 5225 50  0000 C CNN
+F 1 "74HC00" H 7350 5134 50  0000 C CNN
+F 2 "" H 7350 4900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 7350 4900 50  0001 C CNN
+	3    7350 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U?
+U 4 1 63CBC648
+P 9200 5500
+F 0 "U?" H 9200 5825 50  0000 C CNN
+F 1 "74HC00" H 9200 5734 50  0000 C CNN
+F 2 "" H 9200 5500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 9200 5500 50  0001 C CNN
+	4    9200 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U?
+U 5 1 63CBD6DE
+P 10600 5450
+F 0 "U?" H 10830 5496 50  0000 L CNN
+F 1 "74HC00" H 10830 5405 50  0000 L CNN
+F 2 "" H 10600 5450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 10600 5450 50  0001 C CNN
+	5    10600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63D3BAD2
+P 10600 5950
+F 0 "#PWR?" H 10600 5700 50  0001 C CNN
+F 1 "GND" H 10605 5777 50  0000 C CNN
+F 2 "" H 10600 5950 50  0001 C CNN
+F 3 "" H 10600 5950 50  0001 C CNN
+	1    10600 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 63D3C658
+P 10600 4950
+F 0 "#PWR?" H 10600 4800 50  0001 C CNN
+F 1 "+3.3V" H 10615 5123 50  0000 C CNN
+F 2 "" H 10600 4950 50  0001 C CNN
+F 3 "" H 10600 4950 50  0001 C CNN
+	1    10600 4950
+	1    0    0    -1  
+$EndComp
+Text Label 7050 4800 2    50   ~ 0
+SWITCH
+Text Label 8800 1650 2    50   ~ 0
+ESP_USER_ON
+$Comp
+L 74xx:74HC00 U?
+U 2 1 63CBA11E
+P 8050 6100
+F 0 "U?" H 8050 6425 50  0000 C CNN
+F 1 "74HC00" H 8050 6334 50  0000 C CNN
+F 2 "" H 8050 6100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 8050 6100 50  0001 C CNN
+	2    8050 6100
+	1    0    0    -1  
+$EndComp
+Text Label 7050 5000 2    50   ~ 0
+WAKEUP
+Wire Wire Line
+	8600 5400 8900 5400
+Text Label 9950 5500 0    50   ~ 0
+RESET
+Wire Wire Line
+	8600 5600 8900 5600
+Wire Wire Line
+	7650 6000 7750 6000
+Wire Wire Line
+	7650 6200 7750 6200
+Wire Wire Line
+	8350 6100 8600 6100
+$Comp
+L Device:R R?
+U 1 1 63F1D0F1
+P 9800 5500
+F 0 "R?" V 9593 5500 50  0000 C CNN
+F 1 "220R" V 9684 5500 50  0000 C CNN
+F 2 "" V 9730 5500 50  0001 C CNN
+F 3 "~" H 9800 5500 50  0001 C CNN
+	1    9800 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9500 5500 9650 5500
+Text Label 9100 4100 2    50   ~ 0
+ESP_GPIO0
+Text Label 6750 6000 2    50   ~ 0
+ESP_USER_ON
+$Comp
+L Device:R R?
+U 1 1 63FA85BF
+P 6900 5850
+F 0 "R?" H 6970 5896 50  0000 L CNN
+F 1 "100K" H 6970 5805 50  0000 L CNN
+F 2 "" V 6830 5850 50  0001 C CNN
+F 3 "~" H 6900 5850 50  0001 C CNN
+	1    6900 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 63FA85C5
+P 6900 5700
+F 0 "#PWR?" H 6900 5550 50  0001 C CNN
+F 1 "+3.3V" H 6915 5873 50  0000 C CNN
+F 2 "" H 6900 5700 50  0001 C CNN
+F 3 "" H 6900 5700 50  0001 C CNN
+	1    6900 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 6000 6900 6000
+Connection ~ 6900 6000
+Wire Wire Line
+	6900 6000 7050 6000
+Wire Wire Line
+	8600 4900 8600 5400
+Wire Wire Line
+	7650 4900 8600 4900
+Wire Wire Line
+	8600 5600 8600 6100
+Text Notes 6650 6450 0    50   ~ 0
+1 = RESET autorisation
+Text Notes 6850 5200 0    50   ~ 0
+0 = RESET request
+Text Label 10600 1650 0    50   ~ 0
+ESP_GPIO0
+$Comp
+L Device:R R?
+U 1 1 63C4D4F0
+P 6150 1700
+F 0 "R?" H 6220 1746 50  0000 L CNN
+F 1 "100K" H 6220 1655 50  0000 L CNN
+F 2 "" V 6080 1700 50  0001 C CNN
+F 3 "~" H 6150 1700 50  0001 C CNN
+	1    6150 1700
+	1    0    0    -1  
+$EndComp
+Text Label 6150 1950 0    50   ~ 0
+ESP_GPIO0
+Wire Wire Line
+	6150 1950 6150 1850
+$Comp
+L power:+3.3V #PWR?
+U 1 1 63C64293
+P 6150 1550
+F 0 "#PWR?" H 6150 1400 50  0001 C CNN
+F 1 "+3.3V" H 6165 1723 50  0000 C CNN
+F 2 "" H 6150 1550 50  0001 C CNN
+F 3 "" H 6150 1550 50  0001 C CNN
+	1    6150 1550
+	1    0    0    -1  
+$EndComp
+Text Notes 5200 1050 0    50   ~ 0
+GPIO 15 | GPIO 0 | GPIO 2 | Mode\n    L          H        H       Boot flash \n    L          L        H       Prog UART\n    H          X        X       Boot from SD card
+Text Label 10600 1750 0    50   ~ 0
+ESP_GPIO2
+Text Label 10600 1850 0    50   ~ 0
+ESP_GPIO15
+$Comp
+L Device:R R?
+U 1 1 63C9C906
+P 6850 1700
+F 0 "R?" H 6920 1746 50  0000 L CNN
+F 1 "100K" H 6920 1655 50  0000 L CNN
+F 2 "" V 6780 1700 50  0001 C CNN
+F 3 "~" H 6850 1700 50  0001 C CNN
+	1    6850 1700
+	1    0    0    -1  
+$EndComp
+Text Label 6850 1950 0    50   ~ 0
+ESP_GPIO2
+Wire Wire Line
+	6850 1950 6850 1850
+$Comp
+L power:+3.3V #PWR?
+U 1 1 63C9C90E
+P 6850 1550
+F 0 "#PWR?" H 6850 1400 50  0001 C CNN
+F 1 "+3.3V" H 6865 1723 50  0000 C CNN
+F 2 "" H 6850 1550 50  0001 C CNN
+F 3 "" H 6850 1550 50  0001 C CNN
+	1    6850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 63C9FAA4
+P 5350 1650
+F 0 "R?" H 5420 1696 50  0000 L CNN
+F 1 "100K" H 5420 1605 50  0000 L CNN
+F 2 "" V 5280 1650 50  0001 C CNN
+F 3 "~" H 5350 1650 50  0001 C CNN
+	1    5350 1650
+	1    0    0    -1  
+$EndComp
+Text Label 5350 1500 0    50   ~ 0
+ESP_GPIO15
+Wire Wire Line
+	5350 1900 5350 1800
+$Comp
+L power:GND #PWR?
+U 1 1 63CA6B23
+P 5350 1900
+F 0 "#PWR?" H 5350 1650 50  0001 C CNN
+F 1 "GND" H 5355 1727 50  0000 C CNN
+F 2 "" H 5350 1900 50  0001 C CNN
+F 3 "" H 5350 1900 50  0001 C CNN
+	1    5350 1900
+	1    0    0    -1  
+$EndComp
+Text Notes 4050 1050 0    50   ~ 0
+RESET:\n L      Reset Enable\n H     Reset Disable
+$Comp
+L Device:R R?
+U 1 1 63CC4A8E
+P 4350 1650
+F 0 "R?" H 4420 1696 50  0000 L CNN
+F 1 "100K" H 4420 1605 50  0000 L CNN
+F 2 "" V 4280 1650 50  0001 C CNN
+F 3 "~" H 4350 1650 50  0001 C CNN
+	1    4350 1650
+	1    0    0    -1  
+$EndComp
+Text Label 4350 1900 0    50   ~ 0
+RESET
+Wire Wire Line
+	4350 1900 4350 1800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 63CC4A96
+P 4350 1500
+F 0 "#PWR?" H 4350 1350 50  0001 C CNN
+F 1 "+3.3V" H 4365 1673 50  0000 C CNN
+F 2 "" H 4350 1500 50  0001 C CNN
+F 3 "" H 4350 1500 50  0001 C CNN
+	1    4350 1500
+	1    0    0    -1  
+$EndComp
+Text Label 8800 1550 2    50   ~ 0
+WAKEUP
+Text Label 9650 2850 2    50   ~ 0
+MCP9080X_ALERT
+$Comp
+L ESP8266:ESP-12F U?
+U 1 1 63B3A4E6
+P 9700 1550
+F 0 "U?" H 9700 2315 50  0000 C CNN
+F 1 "ESP-12F" H 9700 2224 50  0000 C CNN
+F 2 "" H 9700 1550 50  0001 C CNN
+F 3 "" H 9700 1550 50  0001 C CNN
+	1    9700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR?
+U 1 1 63DAD7E2
+P 2200 6350
+F 0 "#PWR?" H 2200 6100 50  0001 C CNN
+F 1 "GND1" H 2205 6177 50  0000 C CNN
+F 2 "" H 2200 6350 50  0001 C CNN
+F 3 "" H 2200 6350 50  0001 C CNN
+	1    2200 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63DB2412
+P 4450 6050
+F 0 "#PWR?" H 4450 5800 50  0001 C CNN
+F 1 "GND" V 4455 5922 50  0000 R CNN
+F 2 "" H 4450 6050 50  0001 C CNN
+F 3 "" H 4450 6050 50  0001 C CNN
+	1    4450 6050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 63DB2F46
+P 4450 6150
+F 0 "#PWR?" H 4450 6000 50  0001 C CNN
+F 1 "+3.3V" V 4465 6278 50  0000 L CNN
+F 2 "" H 4450 6150 50  0001 C CNN
+F 3 "" H 4450 6150 50  0001 C CNN
+	1    4450 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND1 #PWR?
+U 1 1 63DB5A1A
+P 3400 6050
+F 0 "#PWR?" H 3400 5800 50  0001 C CNN
+F 1 "GND1" H 3405 5877 50  0000 C CNN
+F 2 "" H 3400 6050 50  0001 C CNN
+F 3 "" H 3400 6050 50  0001 C CNN
+	1    3400 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND1 #PWR?
+U 1 1 63DB656A
+P 1200 6800
+F 0 "#PWR?" H 1200 6550 50  0001 C CNN
+F 1 "GND1" H 1205 6627 50  0000 C CNN
+F 2 "" H 1200 6800 50  0001 C CNN
+F 3 "" H 1200 6800 50  0001 C CNN
+	1    1200 6800
+	1    0    0    -1  
+$EndComp
+Text Label 4450 6250 0    50   ~ 0
+LED
+Text Label 3400 6600 2    50   ~ 0
+SDA1
+Text Label 3400 6500 2    50   ~ 0
+SCL1
+Text Label 4450 6600 0    50   ~ 0
+SDA
+Text Label 4450 6500 0    50   ~ 0
+SCL
+Wire Wire Line
+	3400 6150 2000 6150
+Wire Wire Line
+	2000 6150 2000 5750
+Wire Wire Line
+	2000 5750 1200 5750
+Wire Wire Line
+	1200 5750 1200 5800
+Wire Wire Line
+	2800 3900 3450 3900
+Text Notes 3750 4650 0    50   ~ 0
+RC filter optinel
+Wire Wire Line
+	3950 3900 4150 3900
+Connection ~ 3950 3900
+Wire Wire Line
+	3950 3950 3950 3900
+Wire Wire Line
+	3750 3900 3950 3900
+Wire Wire Line
+	2800 3900 2800 3950
+Connection ~ 2800 3900
+$Comp
+L Device:R R?
+U 1 1 63E2C5C9
+P 3600 3900
+F 0 "R?" V 3393 3900 50  0000 C CNN
+F 1 "0R" V 3484 3900 50  0000 C CNN
+F 2 "" V 3530 3900 50  0001 C CNN
+F 3 "~" H 3600 3900 50  0001 C CNN
+	1    3600 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 3800 2800 3900
+Text Label 4150 3900 0    50   ~ 0
+SWITCH
+$Comp
+L Device:R R?
+U 1 1 63C7A1AA
+P 2800 3650
+F 0 "R?" H 2730 3604 50  0000 R CNN
+F 1 "100K" H 2730 3695 50  0000 R CNN
+F 2 "" V 2730 3650 50  0001 C CNN
+F 3 "~" H 2800 3650 50  0001 C CNN
+	1    2800 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63C87486
+P 2800 4350
+F 0 "#PWR?" H 2800 4100 50  0001 C CNN
+F 1 "GND" H 2805 4177 50  0000 C CNN
+F 2 "" H 2800 4350 50  0001 C CNN
+F 3 "" H 2800 4350 50  0001 C CNN
+	1    2800 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 63C7A1B0
+P 2800 3500
+F 0 "#PWR?" H 2800 3350 50  0001 C CNN
+F 1 "+3.3V" V 2815 3628 50  0000 L CNN
+F 2 "" H 2800 3500 50  0001 C CNN
+F 3 "" H 2800 3500 50  0001 C CNN
+	1    2800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63C538ED
+P 3950 4250
+F 0 "#PWR?" H 3950 4000 50  0001 C CNN
+F 1 "GND" H 3955 4077 50  0000 C CNN
+F 2 "" H 3950 4250 50  0001 C CNN
+F 3 "" H 3950 4250 50  0001 C CNN
+	1    3950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 63B5EFC0
+P 3950 4100
+F 0 "C?" V 4202 4100 50  0000 C CNN
+F 1 "200n" V 4111 4100 50  0000 C CNN
+F 2 "" H 3988 3950 50  0001 C CNN
+F 3 "~" H 3950 4100 50  0001 C CNN
+	1    3950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 63B5C9B5
+P 2800 4150
+F 0 "SW?" H 2800 4435 50  0000 C CNN
+F 1 "SW_Push" H 2800 4344 50  0000 C CNN
+F 2 "" H 2800 4350 50  0001 C CNN
+F 3 "~" H 2800 4350 50  0001 C CNN
+	1    2800 4150
+	0    1    1    0   
+$EndComp
+Text Label 1250 4200 2    50   ~ 0
+SDA
+Text Label 1250 4100 2    50   ~ 0
+SCL
+$Comp
+L power:+3.3V #PWR?
+U 1 1 63B42950
+P 1250 4000
+F 0 "#PWR?" H 1250 3850 50  0001 C CNN
+F 1 "+3.3V" V 1265 4128 50  0000 L CNN
+F 2 "" H 1250 4000 50  0001 C CNN
+F 3 "" H 1250 4000 50  0001 C CNN
+	1    1250 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63B423F5
+P 1250 3900
+F 0 "#PWR?" H 1250 3650 50  0001 C CNN
+F 1 "GND" V 1255 3772 50  0000 R CNN
+F 2 "" H 1250 3900 50  0001 C CNN
+F 3 "" H 1250 3900 50  0001 C CNN
+	1    1250 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 63B40E9A
+P 1450 4000
+F 0 "J?" H 1368 3575 50  0000 C CNN
+F 1 "Screen" H 1368 3666 50  0000 C CNN
+F 2 "" H 1450 4000 50  0001 C CNN
+F 3 "~" H 1450 4000 50  0001 C CNN
+	1    1450 4000
+	1    0    0    -1  
+$EndComp
+Text Notes 2200 5750 0    50   ~ 0
+Front PCB
+Text Notes 4250 2050 0    50   ~ 0
+Optional
+Wire Wire Line
+	7650 6000 7650 6100
+Connection ~ 7650 6100
+Wire Wire Line
+	7650 6100 7650 6200
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 63F3030D
+P 9300 3800
+F 0 "J?" H 9380 3792 50  0000 L CNN
+F 1 "Conn_01x06" H 9380 3701 50  0000 L CNN
+F 2 "" H 9300 3800 50  0001 C CNN
+F 3 "~" H 9300 3800 50  0001 C CNN
+	1    9300 3800
+	1    0    0    -1  
+$EndComp
+Text Label 6750 6200 2    50   ~ 0
+ESP_GPIO0
+Wire Wire Line
+	7050 6200 6750 6200
+Text Notes 8100 850  0    50   ~ 0
+Tension mesuré en interne\n
+NoConn ~ 8800 1350
+Text Notes 4900 3500 0    50   ~ 0
+Tester RC filter
+$Comp
+L Device:R R?
+U 1 1 63C625D8
+P 8000 1750
+F 0 "R?" V 7793 1750 50  0000 C CNN
+F 1 "220R" V 7884 1750 50  0000 C CNN
+F 2 "" V 7930 1750 50  0001 C CNN
+F 3 "~" H 8000 1750 50  0001 C CNN
+	1    8000 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 1750 8150 1750
+$Comp
+L Device:R R?
+U 1 1 63C7E487
+P 9650 2600
+F 0 "R?" H 9720 2646 50  0000 L CNN
+F 1 "220R" H 9720 2555 50  0000 L CNN
+F 2 "" V 9580 2600 50  0001 C CNN
+F 3 "~" H 9650 2600 50  0001 C CNN
+	1    9650 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2750 9650 2850
+NoConn ~ 9950 2450
+NoConn ~ 9850 2450
+NoConn ~ 9750 2450
+NoConn ~ 9550 2450
+NoConn ~ 9450 2450
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 63C8F137
+P 4250 6150
+F 0 "J?" H 4168 6467 50  0000 C CNN
+F 1 "Conn_01x03" H 4168 6376 50  0000 C CNN
+F 2 "" H 4250 6150 50  0001 C CNN
+F 3 "~" H 4250 6150 50  0001 C CNN
+	1    4250 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 63C8FA24
+P 4250 6600
+F 0 "J?" H 4250 6350 50  0000 C CNN
+F 1 "Conn_01x03" H 4250 6250 50  0000 C CNN
+F 2 "" H 4250 6600 50  0001 C CNN
+F 3 "~" H 4250 6600 50  0001 C CNN
+	1    4250 6600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 63CB4377
+P 3600 6600
+F 0 "J?" H 3550 6350 50  0000 L CNN
+F 1 "Conn_01x03" H 3350 6250 50  0000 L CNN
+F 2 "" H 3600 6600 50  0001 C CNN
+F 3 "~" H 3600 6600 50  0001 C CNN
+	1    3600 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 63CB4D62
+P 3600 6150
+F 0 "J?" H 3550 6500 50  0000 L CNN
+F 1 "Conn_01x03" H 3400 6400 50  0000 L CNN
+F 2 "" H 3600 6150 50  0001 C CNN
+F 3 "~" H 3600 6150 50  0001 C CNN
+	1    3600 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6350 3200 6350
+Wire Wire Line
+	3200 6350 3200 6250
+Wire Wire Line
+	3200 6250 3400 6250
+Wire Wire Line
+	3400 6700 1750 6700
+Wire Wire Line
+	1750 6700 1750 6300
+Wire Wire Line
+	1750 6300 1600 6300
+Text Notes 8800 5050 0    50   ~ 0
+Valeur resitance à adapter selon mesure
+Text Notes 6550 6750 0    50   ~ 0
+Mettre le GPIO0 à 0 quand démarrer
+Text Notes 6350 7050 0    50   ~ 0
+User reset reason 6 (to check) si connect pin ENA\nGPIO16 reset reason 5 (to check) si connect pin RESET
+$EndSCHEMATC
