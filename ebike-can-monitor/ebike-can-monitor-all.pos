@@ -1,0 +1,36 @@
+### Footprint positions - created on 2026-09-25T21:19:08 ###
+### Printed by KiCad version 10.0.3
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                Package                                                      PosX       PosY       Rot  Side
+J3        Conn_01x02         Molex_Micro-Fit_3.0_43650-0203_1x02_P3.00mm_Horizontal   140.9700   -30.0200   90.0000  bottom
+SW1       SW_SPDT            SW_Slide_SPDT_Straight_2D00G_3mm                         103.1125   -31.7500   90.0000  bottom
+U1        XIAO-ESP32-C6-SMD  XIAO-ESP32-C6-SMD                                        101.0886   -50.6883  180.0000  bottom
+C1        100n               C_0805_2012Metric                                        113.7260   -33.7820    0.0000  top
+C2        4.7u_X7R_100V      C_1206_3216Metric                                        118.7450   -34.7200  -90.0000  top
+C3        10u                C_1206_3216Metric                                         91.4400   -35.2450  -90.0000  top
+C4        10u                C_1206_3216Metric                                        121.2850   -34.7200  -90.0000  top
+C5        100n               C_0805_2012Metric                                        134.6200   -30.7950  -90.0000  top
+D1        SS210              D_SMA                                                    109.8550   -34.1950   90.0000  top
+D2        SS14               D_SMA                                                     95.9800   -29.2100    0.0000  top
+H1        MountingHole       MountingHole_3.2mm_M3                                     80.0100   -29.2100    0.0000  top
+H2        MountingHole       MountingHole_3.2mm_M3                                     80.0100   -49.5300    0.0000  top
+H3        MountingHole       MountingHole_3.2mm_M3                                    148.5900   -49.5300    0.0000  top
+H4        MountingHole       MountingHole_3.2mm_M3                                    148.5900   -29.2100    0.0000  top
+H5        MountingHole       MountingHole_3.2mm_M3                                    114.3000   -29.2100    0.0000  top
+H6        MountingHole       MountingHole_3.2mm_M3                                    114.3000   -49.5300    0.0000  top
+H7        MountingHole       MountingHole_3.2mm_M3                                    120.6500   -48.2600    0.0000  top
+H8        MountingHole       MountingHole_3.2mm_M3                                    120.6500   -40.6400    0.0000  top
+H9        MountingHole       MountingHole_3.2mm_M3                                    142.2400   -40.6400    0.0000  top
+H10       MountingHole       MountingHole_3.2mm_M3                                    142.2400   -48.2600    0.0000  top
+J1        Conn_01x05         PinHeader_1x05_P2.54mm_Vertical                          129.5400   -39.3700    0.0000  top
+J2        Conn_01x05         PinHeader_1x05_P2.54mm_Vertical                          133.3500   -39.3700    0.0000  top
+L1        22u                IND-SMD_L4.0-W4.0_LVF4040XX                               98.9800   -34.2900  180.0000  top
+R1        120R               R_1206_3216Metric                                        124.4600   -30.4800   90.0000  top
+R2        10K                R_0603_1608Metric                                        129.5400   -33.6550    0.0000  top
+R4        100k               R_0603_1608Metric                                        116.8400   -36.0050  -90.0000  top
+R5        56k                R_0603_1608Metric                                         94.6150   -33.8450  -90.0000  top
+R6        10k                R_0603_1608Metric                                         94.6150   -37.0200  -90.0000  top
+U2        SN65HVD230         SOIC-8_3.9x4.9mm_P1.27mm                                 129.5400   -29.8450  180.0000  top
+U4        LV2862XLVDDCR      SOT-23-6                                                 113.7975   -36.5100    0.0000  top
+## End
