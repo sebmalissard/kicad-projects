@@ -2836,12 +2836,6 @@
 		(uuid "5a55a601-6ff4-4fdf-a82a-9a1dfb1381a9")
 	)
 	(junction
-		(at 125.73 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "010fa147-383b-4e46-8e61-df86927e21ed")
-	)
-	(junction
 		(at 163.83 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2876,6 +2870,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b126900a-3c5f-4c35-92c0-f84c6443d88d")
+	)
+	(junction
+		(at 125.73 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d634043b-a3e6-4c5a-a951-6708a8ddc08c")
 	)
 	(junction
 		(at 156.21 154.94)
@@ -3976,6 +3976,99 @@
 			(project "ebike-can-monitor"
 				(path "/ee9636b5-7a23-4329-8219-34d4863c1637"
 					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 125.73 168.91 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1788976a-9933-487e-bdbf-1b0ba5fce946")
+		(property "Reference" "D1"
+			(at 128.27 167.3224 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS210"
+			(at 128.27 169.8624 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 125.73 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 125.73 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14996"
+			(at 125.73 168.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8b6f5d8a-6ad7-4503-8159-6b6324459b0c")
+		)
+		(pin "2"
+			(uuid "c8927bac-0168-406a-a061-eead6319df0f")
+		)
+		(instances
+			(project "ebike-can-monitor"
+				(path "/ee9636b5-7a23-4329-8219-34d4863c1637"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -6821,99 +6914,6 @@
 			(project "ebike-can-monitor"
 				(path "/ee9636b5-7a23-4329-8219-34d4863c1637"
 					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 125.73 168.91 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da2b680a-74f9-43de-9e02-16bead9867ac")
-		(property "Reference" "D1"
-			(at 128.27 167.9574 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SS210"
-			(at 128.27 170.4974 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 125.73 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 125.73 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C14996"
-			(at 125.73 168.91 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "25b822c8-82b6-4c44-afb4-8fa73c1ae76d")
-		)
-		(pin "2"
-			(uuid "acdc099b-1ddc-4f00-ad1c-7d83eada687c")
-		)
-		(instances
-			(project "ebike-can-monitor"
-				(path "/ee9636b5-7a23-4329-8219-34d4863c1637"
-					(reference "D1")
 					(unit 1)
 				)
 			)
