@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "Domotique-temperature-sonde-cache") (type "Legacy") (uri "C:/Users/Seb/Documents/KiCad/kicad-projects/Domotique-temperature-sonde/Domotique-temperature-sonde-cache.lib") (options "") (descr "Librairie cache du projet hérité"))
+)
